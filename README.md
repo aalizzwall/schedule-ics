@@ -1,10 +1,7 @@
-# 排班休假日 ICS feed
+# 排班休假日 ICS feed（去識別化：檔案內只有日期 + 休/例/補休/特休，不含姓名）
 
-Subscribe once in Google Calendar (web only, no OAuth):
-Settings → Other calendars → Add by URL →
+Google Calendar → 其他日历 → 从 URL →
 
-https://raw.githubusercontent.com/aalizzwall/schedule-ics/main/wang-yiting.ics
+https://raw.githubusercontent.com/aalizzwall/schedule-ics/main/off-days.ics
 
-Google re-fetches the file every ~8-24h. The calendar is read-only (edit the .ics here, not in Google).
-
-Update: `python parse_schedule.py <schedule image> 王怡婷 --ics` then copy to `wang-yiting.ics` and push.
+Google 每 ~8-24h 重新抓。更新方式：`parse_schedule.py <排班圖> <姓名> --ics` 后把 off-days.ics push 到此 repo。
